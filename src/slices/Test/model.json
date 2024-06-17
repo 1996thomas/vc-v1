@@ -1,0 +1,60 @@
+{
+  "id": "test",
+  "type": "SharedSlice",
+  "name": "Test",
+  "description": "Test",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "logo": {
+          "type": "Image",
+          "config": {
+            "label": "logo",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "screen": {
+          "type": "Image",
+          "config": {
+            "label": "screen",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "list": {
+          "type": "StructuredText",
+          "config": {
+            "label": "list",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "list-item,strong,em"
+          }
+        },
+        "item_list": {
+          "type": "Group",
+          "config": {
+            "label": "Item LIst",
+            "repeat": true,
+            "fields": {
+              "item": {
+                "type": "Text",
+                "config": {
+                  "label": "Item",
+                  "placeholder": ""
+                }
+              }
+            }
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}
